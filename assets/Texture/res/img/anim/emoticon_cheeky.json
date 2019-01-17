@@ -1,0 +1,235 @@
+{
+"skeleton": { "hash": "9Pj3nloSqTdMLQDLwuHFfYT9oYY", "spine": "2.1.27", "width": 114, "height": 114, "images": "./assets/" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "eyes", "parent": "root", "x": -0.42, "y": 13.16 },
+	{ "name": "mouth", "parent": "root", "length": 9.6, "x": -0.75, "y": -11.32, "rotation": 88.19 },
+	{ "name": "eyeball_left", "parent": "eyes", "x": -29.12, "y": 6.95 },
+	{ "name": "eyeball_right", "parent": "eyes", "x": 13.23, "y": 6.95 }
+],
+"slots": [
+	{ "name": "head", "bone": "root", "attachment": "emoticon_head" },
+	{ "name": "cheeks", "bone": "root", "attachment": "emoticon_cheeky_cheeks" },
+	{ "name": "eyes_white", "bone": "eyes", "attachment": "emoticon_eyes_cheeky_white" },
+	{ "name": "eyeball_right", "bone": "eyeball_right", "attachment": "emoticon_eyeball" },
+	{ "name": "eyeball_left", "bone": "eyeball_left", "attachment": "emoticon_eyeball" },
+	{ "name": "eyes_ring", "bone": "eyes", "attachment": "emoticon_eyes_cheeky_rings" },
+	{ "name": "mouth", "bone": "mouth", "attachment": "emoticon_mouth_cheeky" }
+],
+"skins": {
+	"default": {
+		"cheeks": {
+			"emoticon_cheeky_cheeks": { "y": 1.49, "width": 113, "height": 35 }
+		},
+		"eyeball_left": {
+			"emoticon_eyeball": { "x": 0.4, "y": -0.03, "width": 14, "height": 14 }
+		},
+		"eyeball_right": {
+			"emoticon_eyeball": { "x": 0.19, "y": -0.31, "width": 14, "height": 14 }
+		},
+		"eyes_ring": {
+			"emoticon_eyes_cheeky_rings": { "x": 0.42, "y": 3.03, "width": 90, "height": 27 }
+		},
+		"eyes_white": {
+			"emoticon_eyes_cheeky_white": { "x": 0.42, "y": 2.48, "width": 84, "height": 22 }
+		},
+		"head": {
+			"emoticon_head": { "width": 114, "height": 114 }
+		},
+		"mouth": {
+			"emoticon_mouth_cheeky": { "x": 5.23, "y": -0.58, "rotation": -88.19, "width": 31, "height": 18 }
+		}
+	}
+},
+"animations": {
+	"emoticon": {
+		"slots": {
+			"cheeks": {
+				"attachment": [
+					{ "time": 0, "name": "emoticon_cheeky_cheeks" },
+					{ "time": 1, "name": "emoticon_cheeky_cheeks" },
+					{ "time": 2, "name": "emoticon_cheeky_cheeks" }
+				]
+			},
+			"eyeball_left": {
+				"attachment": [
+					{ "time": 0, "name": "emoticon_eyeball" },
+					{ "time": 1, "name": "emoticon_eyeball" },
+					{ "time": 2, "name": "emoticon_eyeball" }
+				]
+			},
+			"eyeball_right": {
+				"attachment": [
+					{ "time": 0, "name": "emoticon_eyeball" },
+					{ "time": 1, "name": "emoticon_eyeball" },
+					{ "time": 2, "name": "emoticon_eyeball" }
+				]
+			},
+			"eyes_ring": {
+				"attachment": [
+					{ "time": 0, "name": "emoticon_eyes_cheeky_rings" },
+					{ "time": 1, "name": "emoticon_eyes_cheeky_rings" },
+					{ "time": 2, "name": "emoticon_eyes_cheeky_rings" }
+				]
+			},
+			"eyes_white": {
+				"attachment": [
+					{ "time": 0, "name": "emoticon_eyes_cheeky_white" },
+					{ "time": 1, "name": "emoticon_eyes_cheeky_white" },
+					{ "time": 2, "name": "emoticon_eyes_cheeky_white" }
+				]
+			},
+			"head": {
+				"attachment": [
+					{ "time": 0, "name": "emoticon_head" },
+					{ "time": 1, "name": "emoticon_head" },
+					{ "time": 2, "name": "emoticon_head" }
+				]
+			},
+			"mouth": {
+				"attachment": [
+					{ "time": 0, "name": "emoticon_mouth_cheeky" },
+					{ "time": 1, "name": "emoticon_mouth_cheeky" },
+					{ "time": 2, "name": "emoticon_mouth_cheeky" }
+				]
+			}
+		},
+		"bones": {
+			"root": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1, "angle": 0, "curve": "stepped" },
+					{ "time": 2, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 2, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 1, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 2, "x": 1, "y": 1 }
+				]
+			},
+			"eyes": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1, "angle": 0, "curve": "stepped" },
+					{ "time": 2, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 1, "x": 0, "y": 3.16 },
+					{ "time": 2, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 },
+					{ "time": 1, "x": 1, "y": 0.863 },
+					{ "time": 2, "x": 1, "y": 1 }
+				]
+			},
+			"mouth": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1, "angle": 0, "curve": "stepped" },
+					{ "time": 2, "angle": 0 }
+				],
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1,
+						"x": 0,
+						"y": 7.23,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{
+						"time": 0,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1,
+						"x": 0.859,
+						"y": 1.196,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2, "x": 1, "y": 1 }
+				]
+			},
+			"eyeball_left": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1, "angle": 0, "curve": "stepped" },
+					{ "time": 2, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{
+						"time": 0.6666,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1, "x": 18.62, "y": -1.43, "curve": "stepped" },
+					{
+						"time": 1.6666,
+						"x": 18.62,
+						"y": -1.43,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 1, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 2, "x": 1, "y": 1 }
+				]
+			},
+			"eyeball_right": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1, "angle": 0, "curve": "stepped" },
+					{ "time": 2, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{
+						"time": 0.6666,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1, "x": 20.28, "y": -1.43, "curve": "stepped" },
+					{
+						"time": 1.6666,
+						"x": 20.28,
+						"y": -1.43,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 1, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 2, "x": 1, "y": 1 }
+				]
+			}
+		},
+		"drawOrder": [
+			{ "time": 0 },
+			{ "time": 1 },
+			{ "time": 2 }
+		]
+	}
+}
+}

@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "3d88f058-7d37-4758-b24b-bdaa01fe5ef0",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "match_vetory_CN": {
+      "ver": "1.0.3",
+      "uuid": "6a3ded36-71bc-45ed-a6b6-994fdc2aa059",
+      "rawTextureUuid": "3d88f058-7d37-4758-b24b-bdaa01fe5ef0",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 209,
+      "height": 101,
+      "rawWidth": 210,
+      "rawHeight": 102,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

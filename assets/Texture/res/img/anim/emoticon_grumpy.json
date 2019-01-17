@@ -1,0 +1,310 @@
+{
+"skeleton": { "hash": "MmdiAnmyZIwv8ltIKChXMSCBXX8", "spine": "2.1.27", "width": 114, "height": 114, "images": "./assets/" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "eyes", "parent": "root", "x": -0.7, "y": 4.98 },
+	{ "name": "mouth", "parent": "root", "length": 14.75, "x": 0.11, "y": -17.69, "rotation": 90 },
+	{ "name": "brow", "parent": "eyes", "length": 22.12, "x": 1.09, "y": 6.55, "rotation": 90 },
+	{ "name": "eyeball_left", "parent": "eyes", "x": -15.84, "y": 1.91 },
+	{ "name": "eyeball_right", "parent": "eyes", "x": 33.05, "y": 1.36 }
+],
+"slots": [
+	{ "name": "head", "bone": "root", "attachment": "emoticon_head" },
+	{ "name": "eyes", "bone": "eyes", "attachment": "emoticon_eyes_grumpy" },
+	{ "name": "eyeball_left", "bone": "eyeball_left", "attachment": "emoticon_eyeball" },
+	{ "name": "close_left", "bone": "eyes" },
+	{ "name": "eyeball_right", "bone": "eyeball_right", "attachment": "emoticon_eyeball" },
+	{ "name": "close_right", "bone": "eyes" },
+	{ "name": "brow", "bone": "brow", "attachment": "emoticon_brow_grumpy" },
+	{ "name": "mouth", "bone": "mouth", "attachment": "emoticon_mouth_sad" }
+],
+"skins": {
+	"default": {
+		"brow": {
+			"emoticon_brow_grumpy": { "x": 4.26, "y": 0.38, "rotation": -90, "width": 95, "height": 18 }
+		},
+		"close_left": {
+			"emoticon_eye_grumpy_close01": { "x": -23.89, "y": -9.1, "scaleX": 1.2, "scaleY": 1.2, "width": 22, "height": 6 },
+			"emoticon_eye_grumpy_close02": { "x": -23.25, "y": -7.18, "scaleX": 1.2, "scaleY": 1.2, "width": 25, "height": 10 },
+			"emoticon_eye_grumpy_close03": { "x": -23.61, "y": -4.78, "scaleX": 1.2, "scaleY": 1.2, "width": 25, "height": 14 }
+		},
+		"close_right": {
+			"emoticon_eye_grumpy_close01": { "x": 24.87, "y": -9.08, "scaleX": 1.2, "scaleY": 1.2, "width": 22, "height": 6 },
+			"emoticon_eye_grumpy_close02": { "x": 25.51, "y": -6.84, "scaleX": 1.2, "scaleY": 1.2, "width": 25, "height": 10 },
+			"emoticon_eye_grumpy_close03": { "x": 25.19, "y": -4.92, "scaleX": 1.2, "scaleY": 1.2, "width": 25, "height": 14 }
+		},
+		"eyeball_left": {
+			"emoticon_eyeball": { "x": -0.07, "y": 0.58, "width": 14, "height": 14 }
+		},
+		"eyeball_right": {
+			"emoticon_eyeball": { "x": -0.1, "y": 1.13, "width": 14, "height": 14 }
+		},
+		"eyes": {
+			"emoticon_eyes_grumpy": { "x": 0.7, "y": -7.27, "width": 88, "height": 21 }
+		},
+		"head": {
+			"emoticon_head": { "width": 114, "height": 114 }
+		},
+		"mouth": {
+			"emoticon_mouth_sad": { "x": 7.43, "y": 0.11, "rotation": -90, "width": 44, "height": 17 }
+		}
+	}
+},
+"animations": {
+	"emoticon": {
+		"slots": {
+			"brow": {
+				"attachment": [
+					{ "time": 0, "name": "emoticon_brow_grumpy" },
+					{ "time": 2, "name": "emoticon_brow_grumpy" }
+				]
+			},
+			"close_left": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 1.1, "name": "emoticon_eye_grumpy_close01" },
+					{ "time": 1.1333, "name": "emoticon_eye_grumpy_close02" },
+					{ "time": 1.1666, "name": "emoticon_eye_grumpy_close03" },
+					{ "time": 1.2333, "name": "emoticon_eye_grumpy_close02" },
+					{ "time": 1.2666, "name": "emoticon_eye_grumpy_close01" },
+					{ "time": 1.3, "name": null },
+					{ "time": 2, "name": null }
+				]
+			},
+			"close_right": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 1.1, "name": "emoticon_eye_grumpy_close01" },
+					{ "time": 1.1333, "name": "emoticon_eye_grumpy_close02" },
+					{ "time": 1.1666, "name": "emoticon_eye_grumpy_close03" },
+					{ "time": 1.2333, "name": "emoticon_eye_grumpy_close02" },
+					{ "time": 1.2666, "name": "emoticon_eye_grumpy_close01" },
+					{ "time": 1.3, "name": null },
+					{ "time": 2, "name": null }
+				]
+			},
+			"eyeball_left": {
+				"attachment": [
+					{ "time": 0, "name": "emoticon_eyeball" },
+					{ "time": 2, "name": "emoticon_eyeball" }
+				]
+			},
+			"eyeball_right": {
+				"attachment": [
+					{ "time": 0, "name": "emoticon_eyeball" },
+					{ "time": 2, "name": "emoticon_eyeball" }
+				]
+			},
+			"eyes": {
+				"attachment": [
+					{ "time": 0, "name": "emoticon_eyes_grumpy" },
+					{ "time": 2, "name": "emoticon_eyes_grumpy" }
+				]
+			},
+			"head": {
+				"attachment": [
+					{ "time": 0, "name": "emoticon_head" },
+					{ "time": 2, "name": "emoticon_head" }
+				]
+			},
+			"mouth": {
+				"attachment": [
+					{ "time": 0, "name": "emoticon_mouth_sad" },
+					{ "time": 2, "name": "emoticon_mouth_sad" }
+				]
+			}
+		},
+		"bones": {
+			"root": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 2, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 2, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 2, "x": 1, "y": 1 }
+				]
+			},
+			"eyes": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 2, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 2, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{
+						"time": 1.0666,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.334, 0.33, 0.668, 0.67 ]
+					},
+					{
+						"time": 1.2,
+						"x": 0.953,
+						"y": 1,
+						"curve": [ 0.337, 0.34, 0.671, 0.68 ]
+					},
+					{ "time": 1.3333, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 2, "x": 1, "y": 1 }
+				]
+			},
+			"mouth": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 2, "angle": 0 }
+				],
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.5, "x": 0, "y": 2.63, "curve": "stepped" },
+					{
+						"time": 1.5,
+						"x": 0,
+						"y": 2.63,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 2, "x": 1, "y": 1 }
+				]
+			},
+			"brow": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 2, "angle": 0 }
+				],
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 1.16,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.5, "x": 0, "y": -0.58, "curve": "stepped" },
+					{
+						"time": 1.0666,
+						"x": 0,
+						"y": -0.58,
+						"curve": [ 0.34, 0.35, 0.676, 0.69 ]
+					},
+					{
+						"time": 1.2,
+						"x": 0,
+						"y": -2.48,
+						"curve": [ 0.344, 0.37, 0.679, 0.71 ]
+					},
+					{ "time": 1.3, "x": 0, "y": -0.58, "curve": "stepped" },
+					{
+						"time": 1.5,
+						"x": 0,
+						"y": -0.58,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2, "x": 0, "y": 1.16 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{
+						"time": 1.0666,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.334, 0.33, 0.668, 0.67 ]
+					},
+					{
+						"time": 1.2,
+						"x": 1.194,
+						"y": 1,
+						"curve": [ 0.335, 0.34, 0.669, 0.67 ]
+					},
+					{ "time": 1.3, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 2, "x": 1, "y": 1 }
+				]
+			},
+			"eyeball_left": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 2, "angle": 0 }
+				],
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.1666, "x": -6.43, "y": 0, "curve": "stepped" },
+					{
+						"time": 0.6666,
+						"x": -6.43,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.8333, "x": -14.85, "y": -2.09, "curve": "stepped" },
+					{
+						"time": 1.6666,
+						"x": -14.85,
+						"y": -2.09,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 2, "x": 1, "y": 1 }
+				]
+			},
+			"eyeball_right": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 2, "angle": 0 }
+				],
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.1666, "x": -8.18, "y": 0, "curve": "stepped" },
+					{
+						"time": 0.6666,
+						"x": -8.18,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.8333, "x": -14.51, "y": -1.46, "curve": "stepped" },
+					{
+						"time": 1.6666,
+						"x": -14.51,
+						"y": -1.46,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 2, "x": 1, "y": 1 }
+				]
+			}
+		},
+		"drawOrder": [
+			{ "time": 0 },
+			{ "time": 2 }
+		]
+	}
+}
+}

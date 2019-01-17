@@ -1,0 +1,82 @@
+package PbGame;
+syntax = "proto3";
+enum RoomStatus {
+	INVALID = -1;//无效
+	FREE = 0;//空闲，未开始
+	WAITBEGIN = 1;//等待开始，人数够了倒计时
+	PLAYING = 2;//正在游戏
+	HANDLER = 3;//摆牌,闲家 庄家都摆好之后 方可操作。
+	SHOW = 4;//比牌阶段,全部摆好庄家开始比牌
+	SETTLEMENT = 5;//结算
+}
+enum PlayerStatus{
+	INVALID = 0;//无效
+	OFFLINE = 1;//掉线
+	LOGINING   = 2;//登陆中
+	ONLINE = 4;//在线
+	SITTING = 8;//坐下
+	PLAYING = 16;//游戏中
+	HANDLER = 32;//摆牌--求和
+	BLINK = 64;//盖牌
+	FORCE = 128;//强攻
+	FOLD = 256;//投降
+	REJECT = 512;//不喝
+	SHOW = 1024;//亮牌，庄家可看 如果游戏结束 闲家也可看。 或者盖牌被庄家开。
+}
+enum ActionEnum{
+	HANDLER = 0;//摆牌--求和
+	BLINK = 1;//盖牌
+	FORCE = 2;//强攻
+	FOLD = 3;//投降
+	REJECT = 4;//不喝
+	BANKER_HANDLER = 5;//庄家求和
+	BANKER_BLINK = 6;//庄家看盖牌
+	BANKER_FORCE = 7;//庄家看强攻
+	BANKER_FOLD= 8;//庄家不看盖牌
+	SHOW = 9;//庄家亮牌
+}
+message Player{
+	int32 userId = 1;
+	string nickName = 2;//昵称
+	string avatar = 3;//头像
+	int64 coin = 4;//金币
+	int64 diamond = 5;//钻石
+	string token = 6;//socket id
+	PlayerStatus status = 7[default=PlayerStatus.INVALID];//状态
+	bytes cards = 8;//手牌
+}
+message RoomInfo{
+    int32 roomId = 1;//房间ID
+    string name = 2;//名字
+    int64 ante = 3;//底注
+    int64 maxAnte = 4;//最大底注
+    int32 maxPlayer = 5;//最大玩家数
+    int64 bringCoins = 6;//携带金币
+    RoomStatus status = 7[default=RoomStatus.INVALID];
+    repeated Player players = 8;//房间里的玩家列表
+    int32 surplusTime = 9;//等待开始时间
+    int32 banker = 10[default=0];//庄位
+    int32 cardNum = 11[default=0];//牌堆数量
+}
+message EnterReq{
+	int32 userId = 1;
+	int32 roomId = 2;
+}
+message EnterRes{
+	int32 code = 1;
+	RoomInfo info = 2;
+}
+message PlayersChange{
+	repeated Player players = 1;//房间里的玩家列表
+}
+message Action{
+	ActionEnum type = 1[default=ActionEnum.HANDLER];//操作类型
+	int32 reqId = 2;//请求id
+	int32 targetId = 3;//目标id
+	Player player = 4;//玩家信息 --主要事获取牌型。
+}
+message Result{
+	ActionEnum type = 1[default=ActionEnum.HANDLER];//操作类型
+	int32 reqId = 2;//请求id
+	int32 targetId = 3;//目标id
+}

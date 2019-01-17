@@ -1,0 +1,21 @@
+package PbLobby;
+syntax = "proto3";
+
+enum Cmd {
+    CMD_BEGIN = 0;
+    CMD_KEEPALIVED_C2S      = 10000;   //心跳包测试
+    CMD_LOGIN_C2S2C         = 10001;   // 登录
+}
+
+message Test1{
+    int32 id = 1;//活动ID
+    string name = 2;//名字
+}
+
+message LoginHall{
+	int32 userId = 1;
+}
+message LoginRes{
+	int32 code = 1;
+	string msg = 2;
+}
